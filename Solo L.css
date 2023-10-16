@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+  }
+  .header {
+  color:#fff;
+  font-family:"Lucidia console";
+  text-align:center;
+  border: 5px solid #3F26BF;
+  background-color:black;
+  outline-style:inset;
+  outline-color:#4997D0;
+  outline-width:7px;
+  
+  }
+  
+  .glow {
+   color:white;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+    font-size:24px;
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #5400f9, 0 0 40px #5400f9, 0 0 50px #5400f9, 0 0 60px #5400f9, 0 0 70px #5400f9;
+    }
+    
+     to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #2161f3, 0 0 40px #2161f3, 0 0 50px #2161f3, 0 0 60px #2161f3, 0 0 70px #2161f3, 0 0 80px #2161f3;
+    }
+  }
+  p{font-size:16px;
+    color:#652DC1
+  }
+  
+  
+  .topnav {
+    overflow: hidden;
+    background-color:black;
+  }
+  
+  .topnav a {
+    float:left;
+    display: block;
+    color:#fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .topnav a:hover {
+    background-color:#652DC1;
+    color:#fff;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #4997D0; 
+    
+  }
+   
+  
+  ::-webkit-scrollbar-thumb {
+    background:#652DC1; 
+    border-radius: 10px;
+  }
+  
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #4997D0;
+  } 
+  
+  
+  img{ 
+  border: 5px solid #3F26BF;  
+  outline-style:inset;
+  outline-color:#4997D0;
+  outline-width:7px
+  }
+  
+  img{
+    width: 150px;
+    height: 400px;
+    transition: height 4s, width 5s;
+    transition-timing-functioning:ease-in-out;  
+  }
+   img:hover{
+   height:500px;
+   width:260px;
+   }
+  
+  
+  iframe{
+  width:300px;
+  height:200px;
+  transition: height 4s, width 5s;
+  transition-timing-functioning:ease-in-out;
+  }
+  
+  iframe:hover{
+  width:330px;
+  height:240px;
+  }
+  
+  .leftcolumn {   
+    float: left;
+    width: 75%;
+  }
+  
+  
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: black;
+    padding-left: 20px;
+  }
+  
+  
+  .card {
+    background-color:black;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: black;
+    margin-top: 20px;
+    border: 5px solid #3F26BF;
+    outline-style:inset;
+    outline-color:#4997D0;
+    outline-width:7px
+  }
+  
+  
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+  
+  
+  @media screen and (max-width: 400px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+  }
